@@ -1,5 +1,5 @@
 # Email verification switch
-Disable new registered user email verification.
+Disable new registered user email verification, will be activated automatically.
 
 # Installation
 
