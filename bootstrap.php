@@ -1,10 +1,10 @@
 <?php
 
-use Flarum\Event\UserWasRegistered;
+use Flarum\User\Event\Registered;
 use Illuminate\Contracts\Events\Dispatcher;
 
 return function (Dispatcher $events) {
-    $events->listen(UserWasRegistered::class, function (UserWasRegistered $event) {
+    $events->listen(Registered::class, function (Registered $event) {
         $event->user->activate();
         $event->user->save();
     });
