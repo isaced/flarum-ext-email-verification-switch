@@ -1,4 +1,4 @@
-# Email verification switch
+# Email verification switch [![Latest Stable Version](https://poser.pugx.org/isaced/flarum-ext-email-verification-switch/version)](https://packagist.org/packages/isaced/flarum-ext-email-verification-switch) [![Total Downloads](https://poser.pugx.org/isaced/flarum-ext-email-verification-switch/downloads)](https://packagist.org/packages/isaced/flarum-ext-email-verification-switch)
 Disable new registered user email verification, will be activated automatically.
 
 # Installation
