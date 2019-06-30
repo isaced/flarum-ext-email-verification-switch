@@ -21,7 +21,7 @@
         "flarum-extension": {
             "title": "Email verification switch",
             "icon": {
-                "name": "envelope-o",
+                "name": "far fa-envelope",
                 "backgroundColor": "#83AF9B",
                 "color": "#fff"
             }
