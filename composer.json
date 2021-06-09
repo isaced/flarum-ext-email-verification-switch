@@ -12,10 +12,11 @@
     ],
     "support": {
         "issues": "https://github.com/isaced/flarum-ext-email-verification-switch/issues",
-        "source": "https://github.com/isaced/flarum-ext-email-verification-switch"
+        "source": "https://github.com/isaced/flarum-ext-email-verification-switch",
+        "forum": "https://discuss.flarum.org/d/6485"
     },
     "require": {
-        "flarum/core": "^0.1.0-beta.16"
+        "flarum/core": "^1.0"
     },
     "extra": {
         "flarum-extension": {
