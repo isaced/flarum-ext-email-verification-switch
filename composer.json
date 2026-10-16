@@ -18,6 +18,13 @@
     "require": {
         "flarum/core": "^1.0 || ^2.0"
     },
+    "require-dev": {
+        "flarum/testing": "^2.0"
+    },
+    "scripts": {
+        "test": "phpunit -c tests/phpunit.xml",
+        "test:setup": "@php tests/integration/setup.php"
+    },
     "extra": {
         "flarum-extension": {
             "title": "Email verification switch",

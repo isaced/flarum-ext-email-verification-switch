@@ -1,0 +1,23 @@
+name: Backend
+
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+  # Weekly, against the newest Flarum 2.x: there is no committed composer.lock,
+  # so every run installs the latest core. A Flarum release that breaks
+  # activation fails here before a user asks about it in the forum.
+  schedule:
+    - cron: '17 6 * * 3'
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    uses: flarum/framework/.github/workflows/REUSABLE_backend.yml@2.x
+    with:
+      enable_backend_testing: true
+      enable_phpstan: false
+
+      backend_directory: .
