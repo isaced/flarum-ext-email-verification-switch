@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../vendor/phpunit/phpunit/phpunit.xsd"
+    backupGlobals="false"
+    bootstrap="../vendor/autoload.php"
+    cacheDirectory=".phpunit.cache"
+    colors="true"
+    processIsolation="true"
+    stopOnFailure="false">
+
+    <php>
+        <ini name="memory_limit" value="-1"/>
+    </php>
+
+    <testsuites>
+        <testsuite name="Flarum Integration Tests">
+            <directory suffix="Test.php">./integration</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
